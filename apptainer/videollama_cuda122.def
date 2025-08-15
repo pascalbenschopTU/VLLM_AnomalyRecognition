@@ -1,0 +1,51 @@
+Bootstrap: docker
+From: nvidia/cuda:12.2.2-devel-ubuntu22.04
+
+%labels
+    Author  "GPT"
+    Version "hf_env-1.0"
+
+%environment
+    . /opt/conda/etc/profile.d/conda.sh
+    conda activate hf_env
+
+%post
+    ### 1. Essentials ###
+    apt-get update && \
+    apt-get install -y --no-install-recommends wget git build-essential ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+    ### 2. Miniconda (silent) ###
+    wget -qO /tmp/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py310_25.3.1-1-Linux-x86_64.sh
+    bash /tmp/miniconda.sh -b -p /opt/conda
+    rm /tmp/miniconda.sh
+    ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+    echo ". /opt/conda/etc/profile.d/conda.sh" >> /etc/bash.bashrc
+    echo "conda activate hf_env" >> /etc/bash.bashrc
+
+    ### 3. Build env from user-supplied YAML ###
+    . /opt/conda/etc/profile.d/conda.sh
+    # create env exactly as specified in the YAML
+    conda create -n hf_env python=3.10.0 -y
+    conda clean -afy
+
+    ### 4. Fix PyTorch CUDA 12.2 wheels (no “+cu122” tag) ###
+    conda activate hf_env
+    conda install -y -c conda-forge ffmpeg
+    pip install "torch>=2.4.0" "torchvision>=0.17.0"
+
+    pip install flash-attn --no-build-isolation
+    pip install transformers==4.46.3 accelerate==1.0.1
+    pip install decord ffmpeg-python imageio imageio-ffmpeg opencv-python
+    pip install accelerate qwen-vl-utils[decord] fastapi opencv-python-headless termcolor torchvision torchao
+
+
+    ### 5. Flash attention
+    pip install packaging ninja cmake wheel build
+    export MAX_JOBS=4
+    pip install flash-attn --no-build-isolation
+
+
+%runscript
+    exec /bin/bash -c ". /opt/conda/etc/profile.d/conda.sh && conda activate hf_env && exec \"\$@\""
+

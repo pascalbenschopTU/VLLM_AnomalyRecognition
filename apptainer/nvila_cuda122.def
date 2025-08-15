@@ -1,0 +1,59 @@
+Bootstrap: docker
+From: nvidia/cuda:12.2.2-devel-ubuntu22.04
+
+%labels
+    Author  "GPT"
+    Version "VILA-1.0"
+
+%environment
+    # make the env active for *every* shell inside the container
+    . /opt/conda/etc/profile.d/conda.sh
+    conda activate vila
+
+%files
+    ./ /opt/NVILA
+
+%post
+    #### 1. OS prerequisites ####
+    apt-get update && \
+    apt-get install -y --no-install-recommends \
+        wget git build-essential ca-certificates && \
+    rm -rf /var/lib/apt/lists/*
+
+    #### 2. Miniconda install (no interactive prompts) ####
+    wget -qO /tmp/miniconda.sh https://repo.anaconda.com/miniconda/Miniconda3-py310_25.3.1-1-Linux-x86_64.sh
+    bash /tmp/miniconda.sh -b -p /opt/conda
+    rm /tmp/miniconda.sh
+    ln -s /opt/conda/etc/profile.d/conda.sh /etc/profile.d/conda.sh
+    echo ". /opt/conda/etc/profile.d/conda.sh" >> /etc/bash.bashrc
+    echo "conda activate vila" >> /etc/bash.bashrc
+
+    #### 3. Reproduce environment_setup.sh ####
+    . /opt/conda/etc/profile.d/conda.sh
+    conda create -n vila python=3.10.14 -y
+    conda activate vila
+
+    # system CUDA 12.2 already present; conda nvcc is optional
+    # conda install -c nvidia cuda-toolkit -y
+
+    pip install --upgrade pip setuptools
+    pip install \
+      https://github.com/Dao-AILab/flash-attention/releases/download/v2.5.8/flash_attn-2.5.8+cu122torch2.3cxx11abiFALSE-cp310-cp310-linux_x86_64.whl
+
+    
+    cd /opt/NVILA
+    pip install -e ".[train,eval]"
+    pip install triton==3.1.0
+    pip install protobuf==3.20.*
+
+    # copy patched DeepSpeed/Transformers files
+    site_pkg_path=$(python - <<'PY'
+import site, sys; print(site.getsitepackages()[0])
+PY
+)
+    cp -rv ./llava/train/deepspeed_replace/* "${site_pkg_path}/deepspeed/"
+
+%runscript
+    # default entrypoint: keep env activated and forward the cmd
+    exec /bin/bash -c ". /opt/conda/etc/profile.d/conda.sh && \
+                       conda activate vila && exec \"$@\""
