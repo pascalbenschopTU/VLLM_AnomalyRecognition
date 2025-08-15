@@ -1,0 +1,1262 @@
+{
+  "0": {
+    "video_name": "0Ow4cotKOuw_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Fighting: Physical altercation between individuals. The most likely class is '1.' Fighting, as the video shows a physical confrontation with people pushing and shoving each other aggressively in an indoor setting that appears to be either social or commercial (e.g., bar).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9628480672836304,
+          0.037151943892240524
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "1": {
+    "video_name": "0Ow4cotKOuw_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "2": {
+    "video_name": "0Ow4cotKOuw_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "3": {
+    "video_name": "0Ow4cotKOuw_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "4": {
+    "video_name": "0Ow4cotKOuw_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "5": {
+    "video_name": "1Kbw1bUw_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video shows a physical altercation between individuals in the store aisle and at checkout counters.\n\n1) Fighting: Physical altercation involving multiple people.\n2) Normal (with minor disturbances): Minor disruptions to routine due to an ongoing fight but not escalating into chaos",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9281654953956604,
+          0.07183453440666199
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "6": {
+    "video_name": "1Kbw1bUw_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video shows a person in dark clothing standing near the checkout counter and another individual approaching from behind holding an object that appears to be some form of weapon (possibly scissors). They engage physically at one point but quickly separate as other individuals rush towards them possibly trying to intervene.\n\n1) Fighting: Physical altercation between two people involving physical contact such as pushing.\n2) Normal: No significant actions beyond routine store operations like shopping are observed",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8947199583053589,
+          0.10528002679347992
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "7": {
+    "video_name": "1Kbw1bUw_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is '2.'",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9833195805549622,
+          0.01668042130768299
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "8": {
+    "video_name": "1Kbw1bUw_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Normal: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is '2.'",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9788584113121033,
+          0.021141543984413147
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "9": {
+    "video_name": "1MVS2QPWbHc_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a busy market area filled with various stalls and people moving around in the background.\n\nThe scene continues to show two individuals interacting near one another amidst colorful lights from nearby shops that emit blue hues into their surroundings (Camera 08). One person is wearing dark clothing while holding an object above his head as if preparing for action; this individual appears agitated throughout most frames but eventually lowers it slightly towards what seems like merchandise on display at different points during interaction between them both.\nAnother pair includes someone dressed similarly who also holds something aloft before lowering arms again",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9719842076301575,
+          0.02801576815545559
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "10": {
+    "video_name": "1MVS2QPWbHc_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The individuals are seen interacting in a casual manner without any physical altercation occurring throughout the video sequence",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9850992560386658,
+          0.014900782145559788
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "11": {
+    "video_name": "1MVS2QPWbHc_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video shows a group entering the premises and moving around inside in an orderly manner without any visible altercation.\n\n1080p resolution",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.979850172996521,
+          0.020149845629930496
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "12": {
+    "video_name": "1MVS2QPWbHc_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "13": {
+    "video_name": "1MVS2QPWbHc_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a chaotic scene where individuals are engaged in physical altercations and aggressive behavior towards each other using various objects as weapons such as sticks.\n\n1) Fighting: Physical altercation between individuals (e.g., punching, pushing).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.995864748954773,
+          0.004135207273066044
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "14": {
+    "video_name": "1MVS2QPWbHc_5.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is '2.'",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9833195805549622,
+          0.01668042130768299
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "15": {
+    "video_name": "39BFeYnbu-I_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "16": {
+    "video_name": "39BFeYnbu-I_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a physical altercation between individuals in what appears to be an indoor setting resembling either a restaurant and arcade area.\n\nThe most likely class from the options provided is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9740452766418457,
+          0.025954697281122208
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "17": {
+    "video_name": "39BFeYnbu-I_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "18": {
+    "video_name": "39BFeYnbu-I_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video depicts a physical altercation between individuals in an indoor setting that appears to be either public transportation (e.g., bus) and retail environment such as convenience store).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9949367642402649,
+          0.005063260905444622
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "19": {
+    "video_name": "39BFeYnbu-I_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "20": {
+    "video_name": "39BFeYnbu-I_5.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Fighting: Physical altercation between individuals (e.g., punching, pushing). The most likely class is '1. Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9423393607139587,
+          0.05766059830784798
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "21": {
+    "video_name": "39BFeYnbu-I_6.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video depicts a physical altercation between individuals in what appears to be an indoor setting resembling either the interior space behind restaurant booths and counters (e.g., kitchen area) where two people are seen interacting aggressively near some equipment on wheels.\n\nThe scene continues inside this same location as described earlier: it looks like both sides have moved away from their initial positions towards each other for confrontation purposes; one person is wearing jeans while another has long hair tied back but remains unclear whether they were involved initially due to lackluster description provided previously",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.963738203048706,
+          0.03626178577542305
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "22": {
+    "video_name": "39BFeYnbu-I_7.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "23": {
+    "video_name": "39BFeYnbu-I_8.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. However, the situation escalates into a physical altercation between individuals (e.g., punching and pushing).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.534740686416626,
+          0.4652593731880188
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "24": {
+    "video_name": "48J5lk4QcpE_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The individuals are engaged in a conversation and handling items on the bar counter without any physical altercation.\n\nThe video takes place inside an indoor setting that resembles either a restaurant or pub environment characterized by dim lighting enhanced through blue light filters applied to some frames for surveillance purposes (as indicated by 'CITY OF LONDON POLICE' text). Initially calm interactions among three people at one table evolve into more intense exchanges involving gestures such as pointing fingers towards each other while holding drinks like beer bottles; however, there is still minimal movement indicating ongoing conversations rather than aggressive actions.\nAs time",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.979597806930542,
+          0.020402228459715843
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "25": {
+    "video_name": "48J5lk4QcpE_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a bar setting where patrons are engaged in normal social interactions and conversations.\n\nThe scene takes place inside the City London Police pub during nighttime hours (as indicated by 'CITY LONDON POLICE' text). It begins near tables adorned with glasses filled to varying levels on wooden chairs around them; some bottles hang from above as part decor elements that add ambiance but also contribute potential hazards if mishandled due their proximity to people moving about freely within this space designed for leisurely drinking among friends under dim lighting typical at nightclubs/pubs.\nAs more individuals",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9971827864646912,
+          0.002817243803292513
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "26": {
+    "video_name": "48J5lk4QcpE_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "27": {
+    "video_name": "48J5lk4QcpE_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video shows a person in blue clothing interacting calmly and peacefully at the bar counter.\n\nThe most likely class is '2.'",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9601954221725464,
+          0.0398046113550663
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "28": {
+    "video_name": "6Rl7q_kXYbg_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [1]. Fighting: Physical altercation between individuals (e.g., punching).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9259665012359619,
+          0.07403350621461868
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "29": {
+    "video_name": "6Rl7q_kXYbg_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is '1.'",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.7608945369720459,
+          0.23910538852214813
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "30": {
+    "video_name": "6Rl7q_kXYbg_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video shows two individuals in a physical altercation within the hallway.\n\nThe timestamp on each frame reads '15-08-2017 6:49' and later changes to '13/08 - 2017'. Initially showing an individual wearing dark clothing holding another person who is dressed differently against one wall while restraining them from behind using their arms around that other's neck area (indicating they are fighting). As time progresses ('at least until about at most'), both appear more relaxed but still seated",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9707017540931702,
+          0.02929822914302349
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "31": {
+    "video_name": "6Rl7q_kXYbg_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is '1.'",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.7608945369720459,
+          0.23910538852214813
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "32": {
+    "video_name": "6Rl7q_kXYbg_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "33": {
+    "video_name": "6Rl7q_kXYbg_5.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [1]. Fighting: Physical altercation between individuals (e.g., punching).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9259665012359619,
+          0.07403350621461868
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "34": {
+    "video_name": "7gLKFV5voOg_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "35": {
+    "video_name": "7gLKFV5voOg_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "36": {
+    "video_name": "83d-16REC40_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a physical altercation between two individuals in the middle of an urban street setting.\n\n1) Fighting: Physical altercation involving multiple people engaging and grappling on top each other while lying down.\n2.)",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9699499011039734,
+          0.030050065368413925
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "37": {
+    "video_name": "83d-16REC40_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a physical altercation between individuals on the ground in an outdoor setting near parked cars and other people standing around observing.\n\nThe most likely class from these options is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9806565642356873,
+          0.01934344694018364
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "38": {
+    "video_name": "A7FCl8G35Cs_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Normal: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a person walking through an aisle in what appears to be either the entrance area near shelves filled with various items and products on display cases along one side.\n\n[Predicted Class]: Normal",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9743459820747375,
+          0.025654032826423645
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "39": {
+    "video_name": "A7FCl8G35Cs_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a person in gray clothing aggressively attacking another individual who is bent over and seemingly trying to avoid the attack by moving away from it",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.5318251848220825,
+          0.4681748151779175
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "40": {
+    "video_name": "ASGGSDG_183.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video depicts a physical altercation between individuals inside what appears to be the driver's area and passenger seats on public transportation (likely bus).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9958544969558716,
+          0.004145481623709202
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "41": {
+    "video_name": "EFv961C5RgY_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "42": {
+    "video_name": "EFv961C5RgY_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "43": {
+    "video_name": "FXC43fACfPc_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "44": {
+    "video_name": "FXC43fACfPc_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video shows a person in light-colored clothing interacting peacefully near the car and then moving away from it without any aggressive actions observed.\n\n1080p resolution",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9871388673782349,
+          0.012861113995313644
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "45": {
+    "video_name": "FXC43fACfPc_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video depicts a physical altercation between two individuals in an indoor setting that appears to be either storage space for musical instruments and equipment (e.g., drums) on stands).",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.5504381060600281,
+          0.4495618939399719
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "46": {
+    "video_name": "FXC43fACfPc_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Fighting: Physical altercation between individuals (e.g., punching, pushing). The video shows two people engaged in a physical struggle on the floor.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9870269894599915,
+          0.012973027303814888
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "47": {
+    "video_name": "I-QiUMPTWNE_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "48": {
+    "video_name": "I-QiUMPTWNE_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[1. Fighting]: Physical altercation between individuals (e.g., punching, pushing). [2. Normal].",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8847185373306274,
+          0.11528143286705017
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "49": {
+    "video_name": "I-QiUMPTWNE_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "50": {
+    "video_name": "I-QiUMPTWNE_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video shows a group gathered around the counter in what appears to be an electronics store.\n\nThe timestamp on each frame is '02-12-2019 Tue 17:56' and later changes slightly as time progresses ('M', indicating minutes).",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9699645042419434,
+          0.03003547526896
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "51": {
+    "video_name": "I-QiUMPTWNE_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "52": {
+    "video_name": "I-QiUMPTWNE_5.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The video shows a group gathered around the counter in what appears to be an electronics store.\n\nThe timestamp on this clip is 02-12-2019 at Tuesday (5:37 PM).",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9534893035888672,
+          0.04651070386171341
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "53": {
+    "video_name": "I-QiUMPTWNE_6.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "54": {
+    "video_name": "I-QiUMPTWNE_7.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9309059977531433,
+          0.06909399479627609
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "55": {
+    "video_name": "I-QiUMPTWNE_8.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is '2.'",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.9833195805549622,
+          0.01668042130768299
+        ]
+      }
+    },
+    "top_1_score": 0.0
+  },
+  "56": {
+    "video_name": "JECBfnp2ZXc_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is 'Normal'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.7326021790504456,
+          0.26739782094955444
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "57": {
+    "video_name": "JECBfnp2ZXc_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "58": {
+    "video_name": "JECBfnp2ZXc_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "59": {
+    "video_name": "JECBfnp2ZXc_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "60": {
+    "video_name": "JECBfnp2ZXc_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "61": {
+    "video_name": "JECBfnp2ZXc_5.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video shows a man in dark clothing standing near an elevator while another person is on the floor engaged in some activity involving their legs and feet.\n\nThe most likely class from these options would be '1.' Fighting: Physical altercation between individuals (e.g., punching).",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9661957621574402,
+          0.033804260194301605
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "62": {
+    "video_name": "JECBfnp2ZXc_6.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The video shows a physical altercation between two individuals in an elevator area.\n\n1) Fighting: Physical altercation involving pushing and shoving.\n2) Normal (with minor disturbances): Minor disruptions such as someone tripping over shoes on the floor without any major commotion",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8944242000579834,
+          0.10557583719491959
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "63": {
+    "video_name": "MxkTo5F-nvU_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9309059977531433,
+          0.06909399479627609
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "64": {
+    "video_name": "MxkTo5F-nvU_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. [Fighting]. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9309059977531433,
+          0.06909399479627609
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "65": {
+    "video_name": "MxkTo5F-nvU_2.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "66": {
+    "video_name": "MxkTo5F-nvU_3.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "67": {
+    "video_name": "MxkTo5F-nvU_4.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Fighting: Physical altercation between individuals (e.g., punching, pushing). The most likely class is 'Normal'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.8572314977645874,
+          0.1427684873342514
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "68": {
+    "video_name": "OvDMIkTb4XU_0.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "Fighting: Physical altercation between individuals (e.g., punching, pushing). The most likely class is '1. Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.9423393607139587,
+          0.05766059830784798
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  },
+  "69": {
+    "video_name": "OvDMIkTb4XU_1.mp4",
+    "video_label": "Fighting",
+    "video_prediction": {
+      "0.00s\u20134.97s": {
+        "LLM_output": "[Normal]: Routine, peaceful activities with no signs of aggression or conflict. The most likely class is 'Fighting'.",
+        "LLM_classes": [
+          "Fighting",
+          "Normal"
+        ],
+        "LLM_confidence": [
+          0.6106952428817749,
+          0.3893047571182251
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  }
+}

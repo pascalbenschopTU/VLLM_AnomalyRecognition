@@ -1,0 +1,68 @@
+
+Macro Top-1 Accuracy (avg over classes): 27.00%
+Macro Top-3 Accuracy:                      47.89%
+Macro Adjusted Accuracy:                   39.80%
+Micro VAD AUC Score:                       78.9726
+
+
+--- Robustness ---
+Normal videos wrongly flagged (count): 15/150
+Normal videos wrongly flagged (rate) : 10.00%
+Avg % of snippets predicted 'non-Normal' in Normal videos     : 5.00%
+Avg % of snippets predicted 'non-Normal' in Anomalous videos : 58.65%
+
+Per-Class Accuracy:
+Abuse          : 0.00
+Arrest         : 0.80
+Arson          : 0.10
+Assault        : 0.75
+Burglary       : 0.00
+Explosion      : 0.59
+Fighting       : 0.00
+Normal         : 1.00
+RoadAccidents  : 0.17
+Robbery        : 0.20
+Shooting       : 0.04
+Shoplifting    : 0.00
+Stealing       : 0.00
+Vandalism      : 0.12
+
+Per-Class Top-3 Predictions:
+Abuse          : 0.50
+Arrest         : 0.80
+Arson          : 0.30
+Assault        : 1.00
+Burglary       : 0.13
+Explosion      : 0.73
+Fighting       : 0.60
+Normal         : 1.00
+RoadAccidents  : 0.91
+Robbery        : 0.20
+Shooting       : 0.08
+Shoplifting    : 0.04
+Stealing       : 0.29
+Vandalism      : 0.12
+
+Per-Class Adjusted Correct Predictions:
+Abuse          : 0.00
+Arrest         : 0.80
+Arson          : 0.24
+Assault        : 0.90
+Burglary       : 0.35
+Explosion      : 0.69
+Fighting       : 0.80
+Normal         : 1.00
+RoadAccidents  : 0.24
+Robbery        : 0.20
+Shooting       : 0.04
+Shoplifting    : 0.04
+Stealing       : 0.14
+Vandalism      : 0.12
+
+--- Extra LLM-response statistics --------------------------------
+Average response length (tokens):           38.4
+Avg % prompt words repeated:                13.20%
+% responses with NO class label:            0.00%
+% responses with >1 class label:            18.10%
+% responses containing CORRECT class label: 50.00%
+% responses containing INCORRECT label(s):  56.38%

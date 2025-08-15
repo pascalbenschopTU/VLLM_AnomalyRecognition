@@ -1,0 +1,20 @@
+{
+  "1": {
+    "video_name": "TP6mtOzL_0.mp4",
+    "video_label": "Normal",
+    "video_prediction": {
+      "[0.00s-4.97s]": {
+        "LLM_output": "[Normal] A busy clothing store filled people browsing items on racks.\nMost Likely Option:\n- **Fighting**: No evidence suggests any physical altercations occurred; this is labeled as \"normal\" activity for shopping environments where crowds can be common but not aggressive interactions typical to fighting scenarios like those described under option one (\"fighting\"). Therefore,\n**Final Answer:** [Normal]. The environment appears crowded yet orderly without indications towards violent behavior characteristic within 'Fight' classification criteria provided initially by you! It's important that we focus only upon what\u2019s visibly presented here rather than making assumptions beyond these boundaries set forth earlier regarding potential misinterpretation due",
+        "LLM_classes": [
+          "Normal",
+          "Fighting"
+        ],
+        "LLM_confidence": [
+          0.8302487730979919,
+          0.16975118219852448
+        ]
+      }
+    },
+    "top_1_score": 1.0
+  }
+}

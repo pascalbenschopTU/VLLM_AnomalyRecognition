@@ -1,0 +1,51 @@
+
+Macro Top-1 Accuracy (avg over classes): 15.66%
+Macro Top-3 Accuracy:                      37.01%
+Macro Adjusted Accuracy:                   19.12%
+Micro VAD AUC Score:                       50.6603
+
+
+--- Robustness ---
+Normal videos wrongly flagged (count): 16/150
+Normal videos wrongly flagged (rate) : 10.67%
+Avg % of snippets predicted 'non-Normal' in Normal videos     : 4.13%
+Avg % of snippets predicted 'non-Normal' in Anomalous videos : 8.44%
+
+Per-Class Accuracy:
+Abuse          : 0.00
+Arrest         : 0.00
+Arson          : 0.20
+Burglary       : 0.00
+Explosion      : 0.09
+Fighting       : 0.00
+Normal         : 1.00
+RoadAccidents  : 0.39
+Shoplifting    : 0.04
+Stealing       : 0.00
+Vandalism      : 0.00
+
+Per-Class Top-3 Predictions:
+Abuse          : 0.00
+Arrest         : 0.60
+Arson          : 0.20
+Burglary       : 0.00
+Explosion      : 0.32
+Fighting       : 1.00
+Normal         : 1.00
+RoadAccidents  : 0.91
+Shoplifting    : 0.04
+Stealing       : 0.00
+Vandalism      : 0.00
+
+Per-Class Adjusted Correct Predictions:
+Abuse          : 0.00
+Arrest         : 0.00
+Arson          : 0.20
+Burglary       : 0.00
+Explosion      : 0.09
+Fighting       : 0.32
+Normal         : 1.00
+RoadAccidents  : 0.45
+Shoplifting    : 0.04
+Stealing       : 0.00
+Vandalism      : 0.00

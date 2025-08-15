@@ -1,0 +1,32 @@
+
+Macro Top-1 Accuracy (avg over classes): 73.25%
+Macro Top-3 Accuracy:                      100.00%
+Macro Adjusted Accuracy:                   73.25%
+Micro VAD AUC Score:                       73.2500
+
+
+--- Robustness ---
+Normal videos wrongly flagged (count): 75/200
+Normal videos wrongly flagged (rate) : 37.50%
+Avg % of snippets predicted 'non-Normal' in Normal videos     : 37.50%
+Avg % of snippets predicted 'non-Normal' in Anomalous videos : 84.00%
+
+Per-Class Accuracy:
+Fighting       : 0.84
+Normal         : 0.62
+
+Per-Class Top-3 Predictions:
+Fighting       : 1.00
+Normal         : 1.00
+
+Per-Class Adjusted Correct Predictions:
+Fighting       : 0.84
+Normal         : 0.62
+
+--- Extra LLM-response statistics --------------------------------
+Average response length (tokens):           57.7
+Avg % prompt words repeated:                21.18%
+% responses with NO class label:            7.00%
+% responses with >1 class label:            5.75%
+% responses containing CORRECT class label: 71.00%
+% responses containing INCORRECT label(s):  27.75%
