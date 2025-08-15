@@ -18,27 +18,27 @@
 #srun matlab < matlab_script.m # Computations should be started with 'srun'.
 
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --video_root ../datasets_AR/UCF_videos_temporal/ --eval_json logs/UCF_Crime/NVILA-8B-Video/eval_20250521-095450.json"
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --video_root ../datasets_AR/UCF_videos_temporal/ --eval_json logs/UCF_Crime/NVILA-8B-Video/eval_20250523-103659.json"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --video_root ../datasets_AR/UCF_videos_temporal/ --eval_json logs/UCF_Crime/NVILA-8B-Video/eval_20250521-095450.json"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --video_root ../datasets_AR/UCF_videos_temporal/ --eval_json logs/UCF_Crime/NVILA-8B-Video/eval_20250523-103659.json"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name UCF_Crime --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name UCF_Crime --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name UCF_Crime_Privacy --video_root ../../datasets_AR/UCF_videos_privacy/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name UCF_Crime_Privacy --video_root ../../datasets_AR/UCF_videos_privacy/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000 --video_root ../../datasets_AR/RWF2000/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000 --video_root ../../datasets_AR/RWF2000/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000_Depth --video_root ../../datasets_AR/RWF2000_depth/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000_Depth --video_root ../../datasets_AR/RWF2000_depth/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name UCF_Crime --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name UCF_Crime --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name UCF_Crime_Unguided --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name UCF_Crime_Unguided --video_root ../../datasets_AR/UCF_videos_temporal/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name XD_Violence --video_root ../../datasets_AR/XD_Violence/videos/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name XD_Violence --video_root ../../datasets_AR/XD_Violence/videos/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000_Masked --video_root ../../datasets_AR/RWF2000_masked2/ --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000_Masked --video_root ../../datasets_AR/RWF2000_masked2/ --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000_Privacy --video_root ../../datasets_AR/RWF2000_privacy --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000_Privacy --video_root ../../datasets_AR/RWF2000_privacy --experiment No_Few_Shot"
 
-# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000_Privacy_face_gan --video_root ../../datasets_AR/RWF2000_face_gan --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000_Privacy_face_gan --video_root ../../datasets_AR/RWF2000_face_gan --experiment No_Few_Shot"
 
-apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python full_predict_vila.py --dataset_name RWF2000_Privacy_body_gan --video_root ../../datasets_AR/RWF2000_body_gan --experiment No_Few_Shot"
+apptainer exec --nv apptainer/nvila_cuda122.sif bash -c "cd models/VILA && python apply_vila.py --dataset_name RWF2000_Privacy_body_gan --video_root ../../datasets_AR/RWF2000_body_gan --experiment No_Few_Shot"
