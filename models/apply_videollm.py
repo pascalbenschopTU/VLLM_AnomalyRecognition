@@ -458,9 +458,9 @@ def process_request_videollama(model, processor, video_path: str,
                 {"type": "video", "video": {"video_path": video_path,
                                                 "start_time": ts[0], "end_time": ts[-1],
                                                 "max_frames": num_frames}},
-                {"type": "text", "text": "Please classify the anomaly and describe it briefly."}
-            ]},
+                ]},
         ]
+        
         inputs = processor(
             conversation=conv,
             add_system_prompt=True,
