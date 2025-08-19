@@ -69,7 +69,8 @@ tick_positions = []
 tick_labels = []
 
 x = 0.0
-for c in classes:
+# for c in classes:
+for ci, c in enumerate(classes):
     for m in models:
         base = x
         x_positions[(c, m)] = base
@@ -81,11 +82,15 @@ for c in classes:
 fig, ax = plt.subplots(figsize=(18, 6))
 
 class_midpoints = []
-for c in classes:
+# for c in classes:
+for ci, c in enumerate(classes):
     start = x_positions[(c, models[0])]
     end   = x_positions[(c, models[-1])]
     class_midpoints.append((start + end) / 2.0)
     ax.axvline(x=end + gap_between_models*0.8, linestyle="--", linewidth=0.7)
+    # if ci < len(classes) - 1:
+    #     sep_x = end + gap_between_classes / 2.0
+    #     ax.axvline(x=sep_x, linestyle="--", linewidth=0.7)
 
 for c in classes:
     for m in models:
@@ -107,13 +112,18 @@ for c in classes:
 
 ax.set_xticks([])
 ax.set_xticklabels([])
-ax.set_ylabel("Accuracy", fontsize=17)
+ax.set_ylabel("Accuracy (%)", fontsize=17)
 ax.tick_params(axis="y", labelsize=16)
 ax.set_ylim(0, 1.05)
+yticks = ax.get_yticks()
+ax.set_yticklabels([f"{int(v*100)}" for v in yticks], fontsize=16)
+# for mid, c in zip(class_midpoints, classes):
+#     ax.text(mid, 1.1, c, ha="center", va="bottom", fontsize=18)
 for mid, c in zip(class_midpoints, classes):
-    ax.text(mid, 1.1, c, ha="center", va="bottom", fontsize=18)
+    ax.text(mid, -0.08, c, ha="center", va="top", fontsize=18, transform=ax.get_xaxis_transform())
 
-ax.set_title("Few-Shot prompt impact per model", fontsize=22, pad=60)
+
+ax.set_title("Few-Shot prompt impact per model for selected classes", fontsize=22, pad=30) #60
 
 # Double legends
 prompt_handles = [Line2D([0],[0], marker=markers[e], color="black", linestyle="None", markersize=10, label=e) for e in exp_order]
