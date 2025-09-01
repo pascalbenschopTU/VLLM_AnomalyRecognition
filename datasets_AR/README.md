@@ -1,6 +1,8 @@
 # Dataset setup
 Here you can place the datasets downloaded, convert them into temporal or other augmentations.
 
+For synthetic data, you can drop the `synthetic_reasoning_dataset` here.
+
 UCF-Crime can be downloaded from the official github: https://github.com/Xuange923/Surveillance-Video-Understanding
 Or from Kaggle: https://www.kaggle.com/datasets/odins0n/ucf-crime-dataset 
 
