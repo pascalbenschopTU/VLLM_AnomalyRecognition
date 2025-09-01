@@ -29,6 +29,8 @@ from llava.mm_utils import process_images
 from llava.utils import disable_torch_init, make_list, tokenizer as tok_utils
 from llava.constants import MEDIA_TOKENS
 
+from calculate_accuracy_from_json import calculate_accuracy_from_json
+
 DEFAULT_FEW_SHOT_EXAMPLES = [
     {"from": "human", "value": [Image("demo_images/few_shot/Shooting.png")]},
     {"from": "gpt", "value": "A person with raised arm firing a gun as seen from the muzzle flash. Label: Shooting."},
@@ -143,6 +145,54 @@ Choose the most likely class from the options below.
 2. Normal: Routine, peaceful activities with no signs of aggression or conflict.
 """.strip()
 
+# GUIDED_PROMPT_ANOMALY = """
+# You see two characters in the centre of the screen, one on the left and one on the right.
+# Your task is to decide if the clip shows a violent interaction (punching/striking/grappling = Anomaly) or non-violent motion (dancing/waving/standing = Normal).
+# Answer with "Anomaly" or "Normal"
+# """
+
+# GUIDED_PROMPT_ANOMALY_SPATIAL = """
+# You see two characters in the centre of the screen, one on the Left and one on the Right.
+# Your task is to answer which person is attacking the other person.
+# Answer with "Left" or "Right"
+# """
+
+# GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED = """
+# You see two characters in the centre of the screen, one on the Left wearing Red clothing and one on the Right wearing Blue clothing.
+# Your task is to answer which person is attacking the other person.
+# Answer with "Left" or "Right"
+# """
+
+# GUIDED_PROMPT_FOLLOWING = """
+# You see two characters in the centre of the screen, one on the Left and one on the Right.
+# Your task is to answer if one of the characters is following the other, the answer is True if the characters are walking in the exact same direction.
+# Answer with "True" or "False"
+# """
+
+GUIDED_PROMPT_ANOMALY = """
+You see two characters in the centre of the screen, one on the left and one on the right.
+Your task is to decide if the clip shows a violent interaction (punching/striking/grappling = Anomaly) or non-violent motion (dancing/waving/standing = Normal).
+Answer with "Anomaly" or "Normal", Explain your answer
+"""
+
+GUIDED_PROMPT_ANOMALY_SPATIAL = """
+You see two characters in the centre of the screen, one on the Left and one on the Right.
+Your task is to answer which person is attacking the other person.
+Answer with "Left" or "Right", Explain your answer
+"""
+
+GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED = """
+You see two characters in the centre of the screen, one on the Left wearing Red clothing and one on the Right wearing Blue clothing.
+Your task is to answer which person is attacking the other person.
+Answer with "Left" or "Right", Explain your answer
+"""
+
+GUIDED_PROMPT_FOLLOWING = """
+You see two characters in the centre of the screen, one on the Left and one on the Right.
+Your task is to answer if one of the characters is following the other, the answer is True if the characters are walking in the exact same direction.
+Answer with "True" or "False", Explain your answer
+"""
+
 GUIDED_PROMPT_RWF2000_DEPTH = """
 You are given a short surveillance video clip converted to depth.
 Ignore the colors and focus only on the motions.
@@ -190,6 +240,18 @@ def set_prompt_and_labels(dataset_name: str):
     if dataset_name == "XD_Violence":
         prompt = GUIDED_PROMPT_XD
         labels = LABELS_XD_Violence
+    if dataset_name == "Anomaly":
+        prompt = GUIDED_PROMPT_ANOMALY
+        labels = ["Anomaly", "Normal"]
+    if dataset_name == "Spatial":
+        prompt = GUIDED_PROMPT_ANOMALY_SPATIAL
+        labels = ["Left", "Right"]
+    if dataset_name == "Spatial_Colored":
+        prompt = GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED
+        labels = ["Left", "Right"]
+    if dataset_name == "Following":
+        prompt = GUIDED_PROMPT_FOLLOWING
+        labels = ["True", "False"]
 
 # -------------------------------------------------------------------- #
 #                      ----  basic helpers  ----                       #
@@ -511,6 +573,8 @@ def main():
     log.info("Adjusted accuracy: %.2f%%", adj_acc)
     log.info("Top-3    accuracy: %.2f%%", top3_acc)
     log.info("Results written to %s", args.eval_json)
+
+    calculate_accuracy_from_json(args.eval_json, prompt, labels)
 
 
 if __name__ == "__main__":

@@ -33,4 +33,9 @@
 
 # apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models&& python apply_videollm.py --model_type qwen --dataset_name RWF2000_Privacy_face_gan --video_root ../datasets_AR/RWF2000_face_gan --experiment No_Few_Shot"
 
-apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models&& python apply_videollm.py --model_type qwen --dataset_name RWF2000_Privacy_body_gan --video_root ../datasets_AR/RWF2000_body_gan --experiment No_Few_Shot"
+# apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models&& python apply_videollm.py --model_type qwen --dataset_name RWF2000_Privacy_body_gan --video_root ../datasets_AR/RWF2000_body_gan --experiment No_Few_Shot"
+
+apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models && python apply_videollm.py --model_type qwen --dataset_name Anomaly         --video_root ../datasets_AR/synthetic_dataset/anomaly_videos         --experiment merged"
+apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models && python apply_videollm.py --model_type qwen --dataset_name Spatial         --video_root ../datasets_AR/synthetic_dataset/spatial_videos         --experiment merged"
+apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models && python apply_videollm.py --model_type qwen --dataset_name Spatial_Colored --video_root ../datasets_AR/synthetic_dataset/spatial_colored_videos --experiment merged"
+apptainer exec --nv apptainer/hf_models_final3_cuda122.sif bash -c "cd models && python apply_videollm.py --model_type qwen --dataset_name Following      --video_root ../datasets_AR/synthetic_dataset/follow_videos        --experiment merged"

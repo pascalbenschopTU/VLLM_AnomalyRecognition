@@ -31,6 +31,7 @@ from tqdm import tqdm
 from transformers import AutoProcessor, pipeline, GenerationConfig
 
 from vision_process import process_vision_info               # unchanged helper
+from calculate_accuracy_from_json import calculate_accuracy_from_json
 
 # Optional – only needed for VideoLLaMA
 try:
@@ -219,6 +220,54 @@ Choose the most likely class from the options below.
 2. Normal: Routine, peaceful activities with no signs of aggression or conflict.
 """.strip()
 
+# GUIDED_PROMPT_ANOMALY = """
+# You see two characters in the centre of the screen, one on the left and one on the right.
+# Your task is to decide if the clip shows a violent interaction (punching/striking/grappling = Anomaly) or non-violent motion (dancing/waving/standing = Normal).
+# Answer with "Anomaly" or "Normal"
+# """
+
+# GUIDED_PROMPT_ANOMALY_SPATIAL = """
+# You see two characters in the centre of the screen, one on the Left and one on the Right.
+# Your task is to answer which person is attacking the other person.
+# Answer with "Left" or "Right"
+# """
+
+# GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED = """
+# You see two characters in the centre of the screen, one on the Left wearing Red clothing and one on the Right wearing Blue clothing.
+# Your task is to answer which person is attacking the other person.
+# Answer with "Left" or "Right"
+# """
+
+# GUIDED_PROMPT_FOLLOWING = """
+# You see two characters in the centre of the screen, one on the Left and one on the Right.
+# Your task is to answer if one of the characters is following the other, the answer is True if the characters are walking in the exact same direction.
+# Answer with "True" or "False"
+# """
+
+GUIDED_PROMPT_ANOMALY = """
+You see two characters in the centre of the screen, one on the left and one on the right.
+Your task is to decide if the clip shows a violent interaction (punching/striking/grappling = Anomaly) or non-violent motion (dancing/waving/standing = Normal).
+Answer with "Anomaly" or "Normal", Explain your answer
+"""
+
+GUIDED_PROMPT_ANOMALY_SPATIAL = """
+You see two characters in the centre of the screen, one on the Left and one on the Right.
+Your task is to answer which person is attacking the other person.
+Answer with "Left" or "Right", Explain your answer
+"""
+
+GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED = """
+You see two characters in the centre of the screen, one on the Left wearing Red clothing and one on the Right wearing Blue clothing.
+Your task is to answer which person is attacking the other person.
+Answer with "Left" or "Right", Explain your answer
+"""
+
+GUIDED_PROMPT_FOLLOWING = """
+You see two characters in the centre of the screen, one on the Left and one on the Right.
+Your task is to answer if one of the characters is following the other, the answer is True if the characters are walking in the exact same direction.
+Answer with "True" or "False", Explain your answer
+"""
+
 GUIDED_PROMPT_RWF2000_DEPTH = """
 You are given a short surveillance video clip converted to depth.
 Ignore the colors and focus only on the motions.
@@ -264,6 +313,18 @@ def set_prompt_and_labels(dataset_name: str):
     if dataset_name == "XD_Violence":
         prompt = GUIDED_PROMPT_XD
         labels = LABELS_XD_Violence
+    if dataset_name == "Anomaly":
+        prompt = GUIDED_PROMPT_ANOMALY
+        labels = ["Anomaly", "Normal"]
+    if dataset_name == "Spatial":
+        prompt = GUIDED_PROMPT_ANOMALY_SPATIAL
+        labels = ["Left", "Right"]
+    if dataset_name == "Spatial_Colored":
+        prompt = GUIDED_PROMPT_ANOMALY_SPATIAL_COLORED
+        labels = ["Left", "Right"]
+    if dataset_name == "Following":
+        prompt = GUIDED_PROMPT_FOLLOWING
+        labels = ["True", "False"]
         
 
 # ────────────────────────────────────────────────────────────────── #
@@ -612,7 +673,7 @@ def main():
         if args.class_to_test and args.class_to_test != gt_cls:
             continue
         if vid_idx in processed_idxs or Path(video_path).name in processed_names:
-            log.info("Skipping already‑processed [%d] %s", vid_idx, video_path)
+            log.info("Skipping already-processed [%d] %s", vid_idx, video_path)
             continue
 
         answer_chunks = process_request(model, processor, video_path,
@@ -625,7 +686,7 @@ def main():
         for chunk in answer_chunks:
             text = chunk["response"]
             sample = ("\n\nDoes the text describe an anomaly? If yes, select the "
-                      "most relevant label – otherwise 'Normal'.\n" + text)
+                      "most relevant label - otherwise 'Normal'.\n" + text)
             pred = classifier(sample, candidate_labels=labels)
             pl, ps = pred["labels"][:3], pred["scores"][:3]
             ts = chunk["timestamp"]
@@ -666,6 +727,8 @@ def main():
     log.info("Adjusted  accuracy: %.2f%%", adj_acc)
     log.info("Top‑3     accuracy: %.2f%%", top3_acc)
     log.info("Results written to %s", args.eval_json)
+
+    calculate_accuracy_from_json(args.eval_json, prompt, labels)
 
 if __name__ == "__main__":
     main()
